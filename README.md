@@ -1,7 +1,7 @@
 DCS LASTE Script
 📁 Script
 🛩️ LASTE Wind/Temp Correction — A-10C / A-10C II
-A-10_laste
+<img width="602" height="464" alt="607566030-717ebe49-bb59-497f-95fe-f5d75359b653" src="https://github.com/user-attachments/assets/d6d29a46-fa98-4235-ac76-dc3678fbdf91" />
 In an A-10 Thunderbolt II, LASTE stands for Low Altitude Safety and Targeting Enhancement.
 
 LASTE is the system that makes low-level A-10 attacks accurate and survivable. It integrates ballistic computation, autopilot modes, and weapon delivery into a single system, using wind and temperature data across multiple altitude layers to calculate correct weapons impact points. Without it properly programmed, your bombs and rockets will not hit where your pipper says they will — this script makes sure you always have the right numbers before you roll in.
@@ -29,16 +29,6 @@ F10 Other → LASTE → Request LASTE Winds
 ⚠️ The F10 LASTE menu will only appear if you are seated in an A-10C or A-10C II aircraft slot.
 
 Setting the correct QNH
-set_QNH
+<img width="872" height="778" alt="607564365-fee1c4c6-ccf8-4b70-b357-22a198a648c5" src="https://github.com/user-attachments/assets/7a544593-0cd1-4453-8353-8e8058a01d8f" />
+
 It is important to set the QNH correctly before entering LASTE data. The QNH displayed in the script output (in inHg) must be dialled into the altimeter pressure knob — the small knob on the lower left of the altimeter. Getting this right ensures your altimeter reads true altitude, which is the foundation for accurate weapons delivery at all altitude tiers.
-
-License
-MIT License
-
-Copyright (c) 2026 CaptMikeDK
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
