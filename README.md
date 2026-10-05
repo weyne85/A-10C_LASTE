@@ -1,6 +1,13 @@
-A-10 Thunderbolt C and C II, LASTE script it stands for Low Altitude Safety and Targeting Enhancement, and an Auto-Calculation for precision bombing.
+DCS LASTE Script
+📁 Script
+🛩️ LASTE Wind/Temp Correction — A-10C / A-10C II
+A-10_laste
+In an A-10 Thunderbolt II, LASTE stands for Low Altitude Safety and Targeting Enhancement.
 
-Features:
+LASTE is the system that makes low-level A-10 attacks accurate and survivable. It integrates ballistic computation, autopilot modes, and weapon delivery into a single system, using wind and temperature data across multiple altitude layers to calculate correct weapons impact points. Without it properly programmed, your bombs and rockets will not hit where your pipper says they will — this script makes sure you always have the right numbers before you roll in.
+
+This script pulls live in-mission weather data directly from the pilot's aircraft position and formats it ready to type straight into the CDU scratchpad — no math, no conversion needed.*
+Features
 Winds and temps at all 4 CDU altitude tiers (00, 02, 08, 26)
 Wind output pre-formatted as 5-digit strings (e.g. 08001)
 Live QNH in inHg for your altimeter
@@ -8,7 +15,30 @@ Local magnetic variation for the theatre
 Per-pilot display — MP safe, blue coalition only
 Built-in step-by-step CDU entry guide in the readout
 F10 menu driven — request or clear on demand
+Requirements
+MOOSE Framework
+Mission Editor Setup
+Create a trigger: TYPE: Mission Start → ACTION: Do Script File → select Moose.lua
+Create a trigger: TYPE: Once → CONDITION: Time More (5) → ACTION: Do Script File → select A10_laste_Winds_MP.lua
+Video Guide
+LASTE Wind/Temp Correction - How To Video by Gh0st — Jump to CDU input guide at (4:32) min
 
-Needs MOOSE to work!
+In-Game Usage
+F10 Other → LASTE → Request LASTE Winds
 
-Link to my github https://github.com/CaptMikeDK/DCS-LASTE-Script for more details and updates
+⚠️ The F10 LASTE menu will only appear if you are seated in an A-10C or A-10C II aircraft slot.
+
+Setting the correct QNH
+set_QNH
+It is important to set the QNH correctly before entering LASTE data. The QNH displayed in the script output (in inHg) must be dialled into the altimeter pressure knob — the small knob on the lower left of the altimeter. Getting this right ensures your altimeter reads true altitude, which is the foundation for accurate weapons delivery at all altitude tiers.
+
+License
+MIT License
+
+Copyright (c) 2026 CaptMikeDK
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
