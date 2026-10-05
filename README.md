@@ -2,7 +2,7 @@
 ## 📁 Script
 ### 🛩️ LASTE Wind/Temp Correction — A-10C / A-10C II
 <img width="602" height="464" alt="607566030-717ebe49-bb59-497f-95fe-f5d75359b653" src="https://github.com/user-attachments/assets/d6d29a46-fa98-4235-ac76-dc3678fbdf91" />
-In an A-10 Thunderbolt II, LASTE stands for **Low Altitude Safety and Targeting Enhancement**.
+In an A-10 Thunderbolt II, LASTE stands for **Low Altitude Safety and Targeting Enhancement.**
 
 LASTE is the system that makes low-level A-10 attacks accurate and survivable. It integrates ballistic computation, autopilot modes, and weapon delivery into a single system, using wind and temperature data across multiple altitude layers to calculate correct weapons impact points. Without it properly programmed, your bombs and rockets will not hit where your pipper says they will — this script makes sure you always have the right numbers before you roll in.
 
@@ -21,8 +21,8 @@ LASTE is the system that makes low-level A-10 attacks accurate and survivable. I
 - MOOSE Framework
 
 **Mission Editor Setup**
-1. Create a trigger: TYPE: Mission Start → ACTION: Do Script File → select Moose.lua
-2. Create a trigger: TYPE: Once → CONDITION: Time More (5) → ACTION: Do Script File → select A10_laste_Winds_MP.lua
+1. Create a trigger: **TYPE:** Mission Start → **ACTION:** Do Script File → select Moose.lua
+2. Create a trigger: **TYPE:** Once → **CONDITION:** Time More (5) → **ACTION:** Do Script File → select A10_laste_Winds_MP.lua
 
 **In-Game Usage**
 F10 Other → LASTE → Request LASTE Winds
